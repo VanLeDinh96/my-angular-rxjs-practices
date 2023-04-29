@@ -16,8 +16,6 @@ import { catchError, map } from 'rxjs/operators';
 export class AppComponent {
   name = 'Angular 5';
 
-  private init$: Observable<any>;
-
   public ngOnInit() {
     const observable$ = of('data', 'from', 'observable', '!');
     observable$
