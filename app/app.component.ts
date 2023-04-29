@@ -5,7 +5,6 @@ import 'rxjs/add/operator/take';
 import 'rxjs/add/operator/share';
 import 'rxjs/add/operator/shareReplay';
 import { interval } from 'rxjs/observable/interval';
-import { from } from 'rxjs/observable/from';
 
 @Component({
   selector: 'my-app',
@@ -19,6 +18,6 @@ export class AppComponent {
     observable.subscribe((value) => console.log(`Subscriber 1: ${value}`));
     setTimeout(() => {
       observable.subscribe((value) => console.log(`Subscriber 2: ${value}`));
-    }, 5000);
+    }, 2000);
   }
 }
