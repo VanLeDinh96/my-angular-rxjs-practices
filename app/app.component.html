@@ -1,4 +1,2 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<button (click)="emitValue()">Emit Value</button>
+<div *ngFor="let value of values">{{ value }}</div>
